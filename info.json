@@ -1,0 +1,17 @@
+{
+  "name": "advanced-assembling-machine-improved",
+  "version": "1.0.0",
+  "factorio_version": "2.0",
+  "title": "Advanced Assembly Machines: Improved",
+  "author": "johnmart19",
+  "contact": "",
+  "homepage": "https://github.com/FactorioMods/advanced-assembling-machine-improved",
+  "description": "Five compact 3x3 advanced assembling machines, with distinct native animated graphics and crafting speeds of 20, 40, 80, 160 and 320. Planet-based progression with Space Age; base-game progression without it. Colors match Matt's Logistics.",
+  "dependencies": [
+    "base >= 2.0.77",
+    "? space-age",
+    "? um-standalone-space-age-lib",
+    "! advanced-assembling-machine-returns",
+    "! advanced-assembling-machine-returns-to-Space-Age"
+  ]
+}

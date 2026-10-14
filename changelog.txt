@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-10-14
+  Features:
+    - Reduce the machine footprint from 5x5 to vanilla-sized 3x3 and move all four fluid connections onto the new boundary.
+    - Add crafting-speed tiers 40, 80, 160 and 320 with increasing power, material and research costs.
+    - Use planetary materials and research gates with Space Age, with a base-game progression when the DLC is absent.
+  Graphics:
+    - Add distinct green, orange, purple, blue and white designs progressing from mechanical assembly to Space Age processing, matching Matt's Logistics belt colors.
+    - Animate internal tools with native working sprite frames; keep the cabinet fixed.
+    - Reserve the animated fictional dark-matter chamber for the final white tier.
+  Changes:
+    - Preserve original speed-20 prototype names, recipe, research and startup options.
+    - Remove a redundant recipe-category declaration and obsolete mining field; only include crafting categories that exist.
+    - Repair malformed locale data and add English and Russian names for the new tiers.
+  Info:
+    - Factorio 2.0.77 isolated validation retained 40 existing machines and passed 45 Miniloaders Redux input/output combinations.
+    - Two-input/two-output fluid production passed at four rotations for each of the five machines.
+    - Existing 5x5 layouts need adjacent inserters, loaders and pipes moved one tile closer.
