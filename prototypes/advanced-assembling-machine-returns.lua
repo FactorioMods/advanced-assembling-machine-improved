@@ -89,14 +89,9 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		drawing_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-        graphics_set = {
-          animation = {filename="__advanced-assembling-machine-improved__/graphics/machine.png",width=256,height=256,scale=0.5},
-          working_visualisations = {{always_draw=false,animation={
-            filename="__advanced-assembling-machine-improved__/graphics/machine-working.png",
-            width=256,height=256,frame_count=24,line_length=6,animation_speed=0.4,scale=0.5
-          }}}
-        },
-        match_animation_speed_to_activity = false,
+        graphics_set = require("prototypes.graphics")(20),
+        match_animation_speed_to_activity = true,
+        perceived_performance = {minimum=0,maximum=2},
         crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid"},
 		crafting_speed = 20,
 		energy_source =
@@ -105,7 +100,7 @@ data:extend({
 			usage_priority = "secondary-input",
 			emissions_per_minute = { pollution = 20 }
 		},
-		energy_usage = "3750kW",
+		energy_usage = "375kW",
 		ingredient_count = 12,
         module_slots = module_slot_setting,
 		module_info_icon_shift = {0, 0.5},
@@ -122,11 +117,13 @@ data:extend({
 		name = "advanced-assembling-machine-returns",
 		localised_name = {"entity-name.advanced-assembling-machine-returns"},
 		enabled = false,
+        energy_required = 5,
 		ingredients =
 		{
-			{type = "item", name = "assembling-machine-3", amount = 10},
-			{type = "item", name = "speed-module", amount = 5},
-			{type = "item", name = "bulk-inserter", amount = 5}
+			{type = "item", name = "assembling-machine-2", amount = 1},
+			{type = "item", name = "iron-gear-wheel", amount = 10},
+			{type = "item", name = "steel-plate", amount = 5},
+            {type = "item", name = "electronic-circuit", amount = 5}
 		},
 		results = {{type="item", name="advanced-assembling-machine-returns", amount=1}}
 	}
@@ -145,24 +142,8 @@ data:extend({
 				recipe = "advanced-assembling-machine-returns"
 			}
 		},
-		prerequisites =
-		{
-			"speed-module",
-			"logistics-2",
-			"advanced-circuit",
-			"automation-3"
-		},
-		unit =
-		{
-			count = 300,
-			ingredients =
-			{
-				{"automation-science-pack", 2},
-				{"logistic-science-pack", 2},
-				{"chemical-science-pack", 1}
-			},
-			time = 30
-		},
+        prerequisites = {"automation-2"},
+        unit = {count=50,ingredients={{"automation-science-pack",1},{"logistic-science-pack",1}},time=10},
 		upgrade = true,
 		order = "a-e-d"
 	}
