@@ -1,4 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-10-15
+  Graphics:
+    - Redesign all five assemblers with detailed Blender-rendered models, vanilla-inspired recolored casings and planetary dust, wear and oily seams.
+    - Animate connected gears and linkages, guided presses, placement heads, tape feeders, rotary tooling and the final-tier process chamber with 48-frame native loops.
+    - Keep casings, cables and pipework stationary; use separate shadows and clean idle frames.
+    - Add contained Fulgora coil discharges, cycling Vulcanus billet light, a subtle Aquilo cryogenic pulse and restrained working lights.
+    - Fit machine artwork within the three-tile width, improve ground alignment and move smaller Alt-mode recipe icons clear of machinery.
+  Balancing:
+    - Make the green assembler available after Automation 2 with a small assembling-machine-2 recipe and 50 red/green research cycles.
+    - Use accessible direct starter recipes instead of previous-tier machines, large module costs or consumed planetary buildings.
+    - Unlock orange, purple and blue independently through five locally produced carbide, holmium or lithium items; unlock white after the first cryogenic plant.
+    - Remove extra planetary science and quantum-processor gates; preserve base-game progression without Space Age.
+    - Reduce active power to 375 kW, 750 kW, 1.5 MW, 3 MW and 6 MW; retain crafting speeds and startup options.
+  Changes:
+    - Place all five tiers directly after assembling machine 3 in crafting and inventory order.
+    - Use native activity-driven playback without runtime Lua animation callbacks.
+    - Consolidate the intermediate 1.0.x updates into this redesign release; preserve prototype names and existing saves.
+  Info:
+    - All five final animation sheets contain 48 distinct frames; isolated Factorio 2.0.77 captures verified working motion and static idle states.
+    - Loader transfer, robot construction, fluid rotations, planetary milestones and multiplayer checks are documented in the repository and mod listing.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-10-14
   Features:
