@@ -1,8 +1,10 @@
 require("prototypes.advanced-assembling-machine-returns")
 
 local machine = data.raw["assembling-machine"]["advanced-assembling-machine-returns"]
--- Keep recipe overlays on the front apron, clear of moving machinery.
-machine.icon_draw_specification = {scale=0.6, shift={0,0.65}}
+-- Retain vanilla icon sizing and module layout; center the recipe over the production chamber.
+machine.icon_draw_specification = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].icon_draw_specification)
+machine.icon_draw_specification.shift = {0,-0.30}
+machine.icons_positioning = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].icons_positioning)
 if mods["space-age"] then
   machine.heating_energy = "100kW"
 end
