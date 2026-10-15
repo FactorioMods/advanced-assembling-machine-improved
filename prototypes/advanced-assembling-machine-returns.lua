@@ -87,7 +87,7 @@ data:extend({
 		},
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-		drawing_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		drawing_box_vertical_extension = 1.75,
 		fast_replaceable_group = "assembling-machine",
         graphics_set = require("prototypes.graphics")(20),
         match_animation_speed_to_activity = true,
@@ -103,8 +103,6 @@ data:extend({
 		energy_usage = "375kW",
 		ingredient_count = 12,
         module_slots = module_slot_setting,
-		module_info_icon_shift = {0, 0.5},
-		module_info_multi_row_initial_height_modifier = -0.3,
 		allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
 	}
 })

@@ -19,6 +19,12 @@ for i,tier in ipairs(tiers) do
   entity.max_health = tier.health
   local path = "__advanced-assembling-machine-improved__/graphics/"..tier.speed.."/"
   entity.graphics_set = require("prototypes.graphics")(tier.speed)
+  if tier.speed == 320 then
+    -- Keep the process chamber visible; center the recipe on the front panel, with modules below.
+    entity.icon_draw_specification = {scale=0.9,shift={0,0.95}}
+    entity.icons_positioning = {{inventory_index=defines.inventory.assembling_machine_modules,
+      shift={0,1.80},scale=0.5,max_icons_per_row=6,max_icon_rows=1}}
+  end
   entity.icon = path.."icon.png"
   data.raw["assembling-machine"][previous].next_upgrade = name
 

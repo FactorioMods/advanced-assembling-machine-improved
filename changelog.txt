@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2026-10-15
+  Graphics:
+    - Use the working Singularity assembler as the mod thumbnail.
+    - Fit all five equal-sided casings and raised supported decks to the vanilla 3x3 footprint.
+    - Correct gear-stage spacing, linkage clearances, service routes, coil turn gaps and vacuum flange alignment.
+    - Add proper bearing, housing and flanged pipe openings; retain rigid connected mechanical motion.
+    - Refine planetary paint, metal, insulation and localized Aquilo frost.
+    - Add transparent Vulcanus inspection jackets and animated internal heat flow.
+    - Rotate the Fulgora circuit board across the work bay while retaining calibrated placement targets and guide motion.
+    - Render 48 native poses per tier with Cycles HIP RT; use separate native working-light layers for night visibility.
+    - Match visible width, height and front-base alignment to the installed vanilla Assembler 3 animation.
+    - Restore vanilla-sized recipe overlays over working parts; center a larger Singularity recipe icon on its front panel, clear of the chamber.
+    - Replace the obsolete drawing box field with a supported vertical culling extension for tall machinery.
+  Bugfixes:
+    - Fix corrupted characters in the in-game mod description using a plain ASCII speed range.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2026-10-15
   Graphics:
