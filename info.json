@@ -1,14 +1,14 @@
 {
   "name": "advanced-assembling-machine-improved",
-  "version": "1.1.1",
-  "factorio_version": "2.0",
+  "version": "1.1.2",
+  "factorio_version": "2.1",
   "title": "Advanced Assembly Machines: Improved",
   "author": "johnmart19",
   "contact": "",
   "homepage": "https://github.com/FactorioMods/advanced-assembling-machine-improved",
   "description": "Redesigned compact 3x3 assemblers with five planetary styles, 48-frame activity-driven mechanical animations, weathering and working effects. Speeds 20-320, accessible starter recipes, lower power costs, and improved recipe-icon placement. Supports base game and Space Age.",
   "dependencies": [
-    "base >= 2.0.77",
+    "base >= 2.1.23",
     "? space-age",
     "? um-standalone-space-age-lib",
     "! advanced-assembling-machine-returns",

@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2026-10-23
+  Compatibility:
+    - Declare Factorio 2.1 compatibility.
+    - Use vanilla assembler pipe pictures instead of the removed global helper.
+    - Use defines.inventory.crafter_modules for module icon placement.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2026-10-15
   Graphics:

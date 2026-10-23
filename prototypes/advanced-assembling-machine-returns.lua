@@ -37,28 +37,28 @@ data:extend({
 		{
 			{
 				production_type = "input",
-				pipe_picture = assembler3pipepictures(),
+				pipe_picture = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes[1].pipe_picture),
 				pipe_covers = pipecoverspictures(),
                 volume = 1000,
 				pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-1, 1} }}
 			},
 			{
 				production_type = "input",
-				pipe_picture = assembler3pipepictures(),
+				pipe_picture = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes[1].pipe_picture),
 				pipe_covers = pipecoverspictures(),
                 volume = 1000,
 				pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1, 1} }}
 			},
             {
                 production_type = "output",
-                pipe_picture = assembler3pipepictures(),
+                pipe_picture = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes[1].pipe_picture),
                 pipe_covers = pipecoverspictures(),
                 volume = 100,
                 pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, -1} }}
             },
             {
                 production_type = "output",
-                pipe_picture = assembler3pipepictures(),
+                pipe_picture = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes[1].pipe_picture),
                 pipe_covers = pipecoverspictures(),
                 volume = 100,
                 pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1, -1} }}
