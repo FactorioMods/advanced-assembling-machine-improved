@@ -68,7 +68,7 @@ data:extend({
 		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
 		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
         impact_category = "metal",
-		vehicle_impact_sound =	{ filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+
 		working_sound =
 		{
 			sound =
@@ -83,7 +83,7 @@ data:extend({
 				},
 			},
 			idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-			apparent_volume = 1.5,
+
 		},
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
@@ -106,8 +106,6 @@ data:extend({
 		allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
 	}
 })
-
-
 
 data:extend({
 	{
