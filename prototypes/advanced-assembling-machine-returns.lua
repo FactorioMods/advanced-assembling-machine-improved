@@ -89,14 +89,9 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		drawing_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-        graphics_set = {
-          animation = {filename="__advanced-assembling-machine-improved__/graphics/machine.png",width=256,height=256,scale=0.5},
-          working_visualisations = {{always_draw=false,animation={
-            filename="__advanced-assembling-machine-improved__/graphics/machine-working.png",
-            width=256,height=256,frame_count=24,line_length=6,animation_speed=0.4,scale=0.5
-          }}}
-        },
-        match_animation_speed_to_activity = false,
+        graphics_set = require("prototypes.graphics")(20),
+        match_animation_speed_to_activity = true,
+        perceived_performance = {minimum=0,maximum=2},
         crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid"},
 		crafting_speed = 20,
 		energy_source =

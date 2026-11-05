@@ -1,0 +1,5 @@
+Planetary model surface finish includes a CC0 roughness source from Poly Haven.
+https://polyhaven.com/a/metal_plate_02
+Authors: Rob Tuytel
+CC0-1.0
+https://docs.polyhaven.com/en/faq
