@@ -1,4 +1,8 @@
 local module_slot_setting = settings.startup["module-slot"].value
+local default_crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"}
+if data.raw["recipe-category"]["basic-crafting"] then
+    table.insert(default_crafting_categories, 1, "basic-crafting")
+end
 data:extend({
 	{
 		type = "item",
@@ -92,7 +96,7 @@ data:extend({
         graphics_set = require("prototypes.graphics")(20),
         match_animation_speed_to_activity = true,
         perceived_performance = {minimum=0,maximum=2},
-        crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid"},
+        crafting_categories = default_crafting_categories,
 		crafting_speed = 20,
 		energy_source =
 		{
