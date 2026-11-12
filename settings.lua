@@ -1,5 +1,13 @@
 data:extend({
 	{
+	type = "string-setting",
+	name = "advanced-assembler-layout",
+	setting_type = "startup",
+	default_value = "compact-3x3",
+	allowed_values = {"compact-3x3", "legacy-5x5"},
+	order = "0"
+	},
+	{
 	type = "int-setting",
 	name = "module-slot",
 	setting_type = "startup",

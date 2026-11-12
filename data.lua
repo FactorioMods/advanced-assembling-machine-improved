@@ -17,3 +17,4 @@ for _,name in ipairs({"space-age-productivity", "space-exploration-productivity"
 end
 
 require("prototypes.tiers")
+require("prototypes.layout")

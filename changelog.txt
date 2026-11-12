@@ -1,10 +1,12 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.4
-Date: 2026-11-05
+Version: 1.1.5
+Date: 2026-11-12
   Graphics:
     - Compact 3x3 machines with five planetary art styles, weathering and working effects.
     - Native 48-frame production animations with a static idle state and improved recipe-icon placement.
   Features:
+    - Optional legacy 5x5 layout restores original collision, selection and fluid-port positions without moving machines, with artwork scaled to match.
+    - Legacy mode preserves the original speed-20 machine crafting recipe, research requirements and 3.75 MW power budget; added tiers keep their existing recipes and power requirements.
     - Accessible starter recipes and lower power requirements across the five tiers. Crafting speeds remain 20, 40, 80, 160 and 320.
     - Independent planetary production milestones for higher tiers with Space Age, plus normal science progression without it.
   Bugfixes:
