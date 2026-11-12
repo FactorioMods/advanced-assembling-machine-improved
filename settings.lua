@@ -2,6 +2,7 @@ data:extend({
 	{
 	type = "string-setting",
 	name = "advanced-assembler-layout",
+	hidden = false,
 	setting_type = "startup",
 	default_value = "compact-3x3",
 	allowed_values = {"compact-3x3", "legacy-5x5"},

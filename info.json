@@ -1,12 +1,12 @@
 {
   "name": "advanced-assembling-machine-improved",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "factorio_version": "2.1",
   "title": "Advanced Assembly Machines: Improved",
   "author": "johnmart19",
   "contact": "",
   "homepage": "https://github.com/FactorioMods/advanced-assembling-machine-improved",
-  "description": "Five planetary assembler tiers with native activity animations, speeds 20-320, accessible recipes and configurable module slots. Default compact 3x3 layout, plus an optional legacy 5x5 layout preserving original factory connections and the original speed-20 machine balance. Supports base game and Space Age.",
+  "description": "Five assembler tiers, speeds 20\u2013320, each available simultaneously as Small 3x3 and Large 5x5. Large supports 24 item ingredients and four input/four output fluid ports; Small retains 12 ingredients and two input/two output ports. Shared tier technologies, separate upgrade chains, configurable module slots and native activity animations. Preserves existing compact and original four-port factories.",
   "dependencies": [
     "base >= 2.1.23",
     "? space-age",

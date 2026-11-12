@@ -1,13 +1,16 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.5
+Version: 1.1.7
 Date: 2026-11-12
   Graphics:
     - Compact 3x3 machines with five planetary art styles, weathering and working effects.
     - Native 48-frame production animations with a static idle state and improved recipe-icon placement.
   Features:
-    - Optional legacy 5x5 layout restores original collision, selection and fluid-port positions without moving machines, with artwork scaled to match.
-    - Legacy mode preserves the original speed-20 machine crafting recipe, research requirements and 3.75 MW power budget; added tiers keep their existing recipes and power requirements.
+    - Small 3x3 and Large 5x5 variants are available together across all five tiers, sharing technologies with separate upgrade chains.
+    - Large supports 24 item ingredients and four fluid inputs/four outputs; Small retains 12 ingredients and two inputs/two outputs.
+    - Existing compact and original four-port machines retain their entity identities, unit numbers, state and physical connections as Small Legacy and Large Legacy. Old items, recipes and blueprint aliases remain available.
+    - Large retains the original speed-20 crafting recipe and 3.75 MW power budget. Existing shared research balance is preserved; added tiers keep their recipes and power requirements.
     - Accessible starter recipes and lower power requirements across the five tiers. Crafting speeds remain 20, 40, 80, 160 and 320.
     - Independent planetary production milestones for higher tiers with Space Age, plus normal science progression without it.
   Bugfixes:
+    - Expose the saved-machine layout selector so factories from the original 5x5 mod can retain their footprint and fluid connections. It only selects legacy alias geometry; both new size families remain available.
     - Updated Factorio 2.1 prototypes and loading support with or without Space Age, including Quality and Recycler without Space Age.
